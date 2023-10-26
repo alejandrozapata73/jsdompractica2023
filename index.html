@@ -11,7 +11,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Eventos!!</h1>
+    <h1 id="titulo">Eventos!!</h1>
 
     <div class="container">
 
@@ -24,8 +24,8 @@
             </div>
           </div>
 
-<button onclick="alert('hola jugando con eventos')" type="button" class="btn btn-primary">on click</button>
-<button onmouseover="contadorClick()" type="button" class="btn btn-secondary"> mouse arriba</button>
+<button onclick="cambiarH1()" type="button" class="btn btn-primary">on click</button>
+<button onmouseover="volverCero()" type="button" class="btn btn-secondary"> mouse arriba</button>
 <button  type="button" class="btn btn-success">Success</button>
 <button  type="button" class="btn btn-danger">Danger</button>
 <button  type="button" class="btn btn-danger">ingresar dato</button>
@@ -85,9 +85,18 @@
 
     <div class="container">
 
-      <input type="text">
-      <input type="text">
+      <input id="inputA" type="text" >
 
+      <input id="inputB" type="text">
+
+      <button onclick="sumarInput()" type="button" class="btn btn-primary">Sumar</button>
+
+      <h2 id="valorInput" for=""></h2>
+
+    </div>
+
+    <div>
+      <h3>Fin</h3>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
