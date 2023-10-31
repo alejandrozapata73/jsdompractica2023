@@ -105,8 +105,28 @@ function sumarInput(){
 
 console.log(capturaLabel)
 
+//prueba listener
+
+let capturaBotonListener = document.getElementById("botonValores")
+
+capturaBotonListener.addEventListener("click", function(){
+   console.log("probando listener")
+})
 
 
+
+//prueva preventDefault
+let capturaFormulario = document.getElementById( 'formulario' )
+
+capturaFormulario.addEventListener('submit', function(e){
+
+    e.preventDefault()
+
+    let capturaInput = document.getElementById('inputForm1')
+
+    console.log(capturaInput.value)
+
+})
 
 
 
